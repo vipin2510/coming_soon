@@ -1,0 +1,133 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Coming Soon Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i,900" rel="stylesheet">
+    <!--script .js for particles-->
+    <script src="js/jquery.particleground.min.js"></script>
+    <script src="js/demo.js"></script>
+    <style>
+        /* Custom CSS for larger social media icons */
+        .social-sidebar ul li a i {
+            font-size: 3rem; /* Increase icon size */
+        }
+
+        .social-sidebar ul li a span {
+            font-size: 1.5rem; /* Increase text size next to icons */
+        }
+    </style>
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        
+   <!-- ====== Loader======  -->
+    <div id="ud_preloader">
+        <div class="ud_dots">
+            <div class="ud_dot" style="animation-name: ud_preloader_1;">L</div>
+            <div class="ud_dot" style="animation-name: ud_preloader_2;">O</div>
+            <div class="ud_dot" style="animation-name: ud_preloader_3;">A</div>
+            <div class="ud_dot" style="animation-name: ud_preloader_4;">D</div>
+            <div class="ud_dot" style="animation-name: ud_preloader_1;">I</div>
+            <div class="ud_dot" style="animation-name: ud_preloader_2;">N</div>
+            <div class="ud_dot" style="animation-name: ud_preloader_3;">G</div>
+            <div class="ud_dot" style="animation-name: ud_preloader_4;"><i class="fas fa-dot-circle"></i></div>
+            <div class="ud_dot" style="animation-name: ud_preloader_1;"><i class="fas fa-dot-circle"></i></div>
+        </div>
+        
+        <div id="ud_bg_left" class="ud_pre_half"></div>
+        <div id="ud_bg_right" class="ud_pre_half"></div>
+    </div>
+   
+    <!-- ========== Particles bg ===========  -->
+    <section id="particles">
+        <div id="intro">
+            <div class="comming-soon">
+                <div class="header-text">
+                    <h4>COMING SOON</h4>
+                    <p>Where tradition meets fashion ✨.</p>
+                </div>
+    <!-- ========= clock count ======== -->
+                <div id="clockdiv">
+                    <div> <span class="days"></span>
+                        <div class="smalltext">Days</div>
+                    </div>
+                    <div> <span class="hours"></span>
+                        <div class="smalltext">Hours</div>
+                    </div>
+                    <div> <span class="minutes"></span>
+                        <div class="smalltext">Minutes</div>
+                    </div>
+                    <div> <span class="seconds"></span>
+                        <div class="smalltext">Seconds</div>
+                    </div>
+                </div>
+    <!-- =========== Get Location button ============= -->
+                <div class="notify">
+                    <div class="text-center"> 
+                        <a href="https://maps.app.goo.gl/vyChUJJVviReLAok6" target="_blank" class="btn btn-default btn-rounded mb-4">Get Location</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======== Social Sidebar ========  -->
+    <div class="social-sidebar">
+        <aside class="sticky-social">
+            <ul>
+                <li><a href="https://www.instagram.com/sanskriti_ethnics/" class="entypo-instagrem" target="_blank"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
+                <li><a href="https://api.whatsapp.com/send/?phone=917000890466&text=Hello%2C+I+want+to+know+more+about+Sanskriti_Ethnics&type=phone_number&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a></li>
+            </ul>
+        </aside>
+    </div>
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Countdown logic for 2nd October 2024, 1:00 PM
+        var countDownDate = new Date("Oct 2, 2024 13:00:00").getTime();
+        
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.querySelector(".days").innerText = days;
+            document.querySelector(".hours").innerText = hours;
+            document.querySelector(".minutes").innerText = minutes;
+            document.querySelector(".seconds").innerText = seconds;
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("clockdiv").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
