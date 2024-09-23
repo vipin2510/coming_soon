@@ -327,8 +327,8 @@ body {
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 700;
-    letter-spacing: 0.5em;
-    line-height: 65px;
+    letter-spacing: 0.5rem;
+    line-height: 3rem;
     color: goldenrod;
     font-family: serif;
 }
@@ -342,13 +342,13 @@ body {
 
 @media only screen and (max-width: 1000px) {
     h4 {
-        font-size: 30px;
+        font-size: 2rem;
     }
 }
 
 @media only screen and (max-width: 800px) {
     h4 {
-        font-size: 48px;
+        font-size: 1.75rem;
     }
     h4::after {
         height: 8px;
@@ -360,7 +360,7 @@ body {
         padding: 0 10px;
     }
     h4 {
-        font-size: 30px;
+        font-size: 1.25rem;
     }
     h4::after {
         height: 6px;
@@ -375,7 +375,7 @@ body {
 
 @media only screen and (max-width: 320px) {
     h4 {
-        font-size: 28px;
+        font-size: 1rem;
     }
     h4::after {
         height: 4px;
@@ -383,7 +383,7 @@ body {
 }
 /*   ------------4.clock count----- */
 #clockdiv {
-    font-family: sans-serif;
+    font-family: Canva Sans;
     color: #fff;
     display: inline-block;
     font-weight: 100;
@@ -402,7 +402,6 @@ body {
     border-radius: 3px;
     background: #00816A;
     display: inline-block;
-    font-family: fantasy;
 }
 /*--------5.social section---------*/
 
