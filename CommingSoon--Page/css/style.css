@@ -329,7 +329,7 @@ body {
     font-weight: 700;
     letter-spacing: 0.5em;
     line-height: 65px;
-    color: #00816A;
+    color: goldenrod;
     font-family: serif;
 }
 
@@ -500,7 +500,7 @@ body {
 .smalltext {
     padding-top: 5px;
     font-size: 16px;
-    color: #222;
+    color:white;
 }
 .font-weight-bold {
     font-weight: 700!important;
