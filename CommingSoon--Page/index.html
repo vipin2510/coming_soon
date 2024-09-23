@@ -16,18 +16,42 @@
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Canva+Sans|Merriweather:400,400i,700,700i,900" rel="stylesheet">
     <!--script .js for particles-->
     <script src="js/jquery.particleground.min.js"></script>
     <script src="js/demo.js"></script>
     <style>
-        /* Custom CSS for larger social media icons */
-        .social-sidebar ul li a i {
-            font-size: 3rem; /* Increase icon size */
+        /* Custom heading styles */
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 12rem; /* Increase size 3x */
+            color: #fff; /* Make the text color white */
+            text-align: center;
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
         }
 
-        .social-sidebar ul li a span {
-            font-size: 1.5rem; /* Increase text size next to icons */
+        h2 {
+            font-family: 'Canva Sans', sans-serif;
+            font-size: 2.5rem;
+            color: #fff; /* Make the text color white */
+            position: absolute;
+            right: -30px; /* Adjust this value to move "Ethnics" below "riti" */
+            bottom: -15px; /* Reduce space between "Sanskriti" and "Ethnics" */
+        }
+
+        .sanskriti-footer {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            color: #fff; /* White color for Sanskriti in Hindi */
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+
+        .header-text {
+            margin-top: 50px; /* Increase space between Ethnics and Coming Soon */
         }
     </style>
 </head>
@@ -37,7 +61,7 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
         
-   <!-- ====== Loader======  -->
+    <!-- ====== Loader======  -->
     <div id="ud_preloader">
         <div class="ud_dots">
             <div class="ud_dot" style="animation-name: ud_preloader_1;">L</div>
@@ -50,7 +74,7 @@
             <div class="ud_dot" style="animation-name: ud_preloader_4;"><i class="fas fa-dot-circle"></i></div>
             <div class="ud_dot" style="animation-name: ud_preloader_1;"><i class="fas fa-dot-circle"></i></div>
         </div>
-        
+
         <div id="ud_bg_left" class="ud_pre_half"></div>
         <div id="ud_bg_right" class="ud_pre_half"></div>
     </div>
@@ -58,12 +82,18 @@
     <!-- ========== Particles bg ===========  -->
     <section id="particles">
         <div id="intro">
+            <!-- Sanskriti and Ethnics headings -->
+            <div style="position: relative; display: inline-block;">
+                <h1>Sanskriti</h1>
+                <h2>Ethnics</h2>
+            </div>
+
             <div class="comming-soon">
                 <div class="header-text">
                     <h4>COMING SOON</h4>
                     <p>Where tradition meets fashion ✨.</p>
                 </div>
-    <!-- ========= clock count ======== -->
+                <!-- ========= clock count ======== -->
                 <div id="clockdiv">
                     <div> <span class="days"></span>
                         <div class="smalltext">Days</div>
@@ -78,7 +108,7 @@
                         <div class="smalltext">Seconds</div>
                     </div>
                 </div>
-    <!-- =========== Get Location button ============= -->
+                <!-- =========== Get Location button ============= -->
                 <div class="notify">
                     <div class="text-center"> 
                         <a href="https://maps.app.goo.gl/vyChUJJVviReLAok6" target="_blank" class="btn btn-default btn-rounded mb-4">Get Location</a> 
@@ -86,7 +116,11 @@
                 </div>
             </div>
         </div>
+
+        <!-- Sanskriti in Hindi at the bottom right -->
+        <div class="sanskriti-footer">संस्कृति</div>
     </section>
+
     <!-- ======== Social Sidebar ========  -->
     <div class="social-sidebar">
         <aside class="sticky-social">
